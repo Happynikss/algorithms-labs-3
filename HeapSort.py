@@ -56,8 +56,6 @@ def heapsort_trace(arr):
     assignments['count'] += 1
 
     for i in range(start_index, -1, -1):
-        # --- ЗМІНА ТУТ ---
-        # Тепер ми викликаємо sink з увімкненим трасуванням
         comparisons, assignments = sink(arr, i, n, comparisons, assignments, trace=True)
 
     print(f"\nМасив після побудови купи: {arr}\n")
